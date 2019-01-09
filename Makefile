@@ -27,6 +27,7 @@ CC?=gcc
 PROVE?=prove
 
 all:
+	gcc -c picohttpparser.c
 
 test: test-bin
 	$(PROVE) -v ./test-bin
